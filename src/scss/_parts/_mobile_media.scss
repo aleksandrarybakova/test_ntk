@@ -1,0 +1,36 @@
+@media(min-width: 320px) and (max-width: 750px){
+    .resume{
+        padding: 0 5px;
+    }
+    .resume-header__content{
+        flex-direction: column;
+    }
+
+    .city-select__selected{
+        margin-left: 0;
+    }
+
+    .resume-header__header, .company__contacts--phone{
+        font-size: 24px;
+    }
+
+    .data-item__content, .data-item__text, .vacancy-list__text, .company__contacts--header, .company__contacts--e-mail, .about-me>textarea::placeholder, .data-item>input::placeholder{
+        font-size: 20px;
+    }
+
+    .data-item__e-mail , .clip-files__text, .conf__text, .company__contacts--mode{
+        font-size: 12px;
+    }
+
+    .applicant__button--button{
+        font-size: 18px;
+    }
+
+    .company{
+        margin: 0;
+    }
+
+    .company__map>iframe{
+        width: 100%;
+    }
+}

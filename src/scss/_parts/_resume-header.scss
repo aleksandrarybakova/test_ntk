@@ -1,0 +1,68 @@
+.resume-header{
+    margin-bottom: 36px;
+    &__header{
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }    
+}
+
+.resume-header__content{
+    display: flex;
+    &--descript{
+        display: flex;
+        height: 31px;
+        &-text{
+            font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        }
+    }
+    
+}
+.city-select{
+    &__selected{
+      display: flex;
+      align-items: center; 
+      margin-left: 12px; 
+      
+    }
+    
+    &__text{
+        font-size: 24px;
+        font-weight: 500;
+        color: $red;
+        border-bottom: 2px dashed;
+        border-color: rgba(211, 35, 42, 0.2);
+        margin: 0;
+        
+    }
+    &__img{
+        height: 8px;
+        width: 14px;
+        margin-left: 12px;
+    }
+    &__list{
+        padding-left: 12px;
+        // transform: translateY(-120%);
+        
+        
+    }
+}
+
+.cont{
+    overflow: hidden;
+    
+}
+.city{
+    &-list{
+        &__text:hover{
+            cursor: pointer;
+            color: $red;
+        }
+    }
+    &-selected{
+        font-weight: 500;        
+    }
+}

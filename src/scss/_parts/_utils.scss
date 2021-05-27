@@ -1,0 +1,41 @@
+.transition-down{
+    transform: translateY(0);
+    transition: transform 1s ease;
+}
+
+.transition-up{
+    transform: translateY(-120%);
+    transition: transform 1s linear;
+}
+
+.transition{
+    transition: all 1s ease;
+}
+
+.d-none{
+    display: none;
+}
+
+.h100{
+    height: 100%;
+    transition: height 1s ease;
+}
+
+.h0{
+    height: 0;
+    transition: height 1s ease;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.border-active{
+    border-bottom: 2px solid $red;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+

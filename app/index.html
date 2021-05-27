@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Test_Ntk</title>
+</head>
+<body>
+<div class="wrapper resume">
+  <header class="resume-header">
+    <h2 class="resume-header__header">Отправьте ваше резюме</h1>
+    <div id="header_content" class="resume-header__content">
+      <div class="resume-header__content--descript">
+        <p class="resume-header__content--descript-text">Постройте своё будущее c РусЭлитТрейдинг в городе</p>
+      </div>
+      
+      <div id="cityCaret" class="resume-header__content--city city-select">
+        <div class="city-select__selected">
+          <p id="selectedCity" class="city-select__text">Нижний Новгород</p>
+        <img src="./img/CaretDownRed.png" alt="" class="city-select__img">
+        </div>
+        
+        <div class="cont h0">
+          <div id="cityList" class="city-select__list">
+            <p id="city0" class="city-list__text"></p>
+            <p id="city1" class="city-list__text"></p>
+            <p id="city2" class="city-list__text"></p>
+            <p id="city3" class="city-list__text"></p>
+            <p class="city-list__text city-selected"></p>
+          </div>
+        </div>  
+      </div>
+      
+      
+    </div>
+  </header>
+  <main class="resume-content">
+    <form class="applicant">
+    <div class="applicant__main-data">
+      <div class="applicant__main-data--name data-item">
+        <input type="text" placeholder="Как вас зовут?" class="data-item__text ">
+      </div>
+      <div class="applicant__main-data--e-mail data-item">
+        <label class="data-item__e-mail ">Ваш E–mail</label>
+        <input id="inputEmail" type="text" class="data-item__text">
+      </div>
+      <div id="vacancyCaret" class="applicant__main-data--vacancy data-item vacancy">
+        <div class="vacancy-wrapper">
+           <p id="selectedVacancy" class="data-item__content vacancy__text">Выберите вакансию</p>        
+          <img src="./img/CaretDown.png" alt="" class="vacancy__img">
+        </div>
+       
+        <div class="vacancy-list-wrapper h0">
+          <div id="vacancyList" class="vacancy-select__list">
+            <p id="vacancy0" class="vacancy-list__text">Программист</p>
+            <p id="vacancy1" class="vacancy-list__text">Верстальщик</p>
+            <p id="vacancy2" class="vacancy-list__text">Аналитик</p>
+            <p id="vacancy3" class="vacancy-list__text">SEO специалист</p>
+            <p class="vacancy-list__text vacancy-selected">Контент менеджер</p>
+          </div>
+        </div>          
+      </div>
+      <div class="applicant__main-data--about-me data-item about-me">
+        <textarea type="text" class="data-item__text about-me__text" placeholder="Напишите о себе кратко"></textarea>
+      </div>
+    </div>
+    <div class="applicant__extra-data">
+      <div class="applicant__extra-data--docs">
+        <header class="clip-docs">
+          <img src="./img/clip.png" alt="clip" class="clip-docs__img">
+          <p class="clip-docs__text">Прикрепить документы</p>
+        </header>
+        <div class="clip-files">
+          <p class="clip-files__text">Резюме Константинопольский Константин.docx</p>
+          <img src="./img/TrashSimple.png" alt="" class="clip-files__img">
+        </div>
+      </div>
+      <div class="applicant__extra-data--conf conf">
+        <input id="conf_check" type="checkbox" class="conf__check" hidden>
+        <label for="conf_check" class="conf__text"><span>Я соглашаюсь с <span class="conf__text--politics"> политикой конфиденциальности</span>, нажимая на кнопку “Откликнуться”</span></label>
+      </div>
+    </div>
+    <div class="applicant__button">
+      <input type="submit" class="applicant__button--button" value="Откликнуться">
+    </div>
+  </form>
+  <section class="company">
+    <article class="company__map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A74ca24a2f22c2b216c6458c54bc6b6a62fb5f8f7605418337eef950a5e4f7b0e&amp;source=constructor" width="578" height="440" frameborder="0"></iframe>
+    </article>
+    <div class="company__contacts">
+      <p class="company__contacts--header">Контакты:</p>
+      <p class="company__contacts--phone"><a class="link" href="tel:+7 495 929-70-78">+7 495 929-70-78</a></p>
+      <p class="company__contacts--e-mail"><a class="link" href="mailto:ask@htmlbook.ru">welcome@ret-team.su</a></p>
+      <p class="company__contacts--mode">Мы работаем в будни с 9:00 до 18:00.</p>
+    </div>
+  </section>
+  </main>
+  
+</div>
+  
+
+
+
+
+
+<script src="js/elements.js"></script>
+
+<script src="js/header.js"></script>
+<script src="js/vacancy.js"></script>
+<script src="js/Listeners.js"></script>
+</body>
+</html>

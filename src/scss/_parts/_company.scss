@@ -1,0 +1,28 @@
+.company{
+    margin-left: 56px;
+    &__contacts{
+        padding: 46px;
+        &--header{
+            font-size: 24px;
+            font-weight: 500;
+            margin: 0;
+        }
+        &--phone{
+            font-size: 40px;
+            font-weight: 400;
+            margin: 32px 0 16px;
+        }
+        &--e-mail{
+            font-size: 24px;
+            font-weight: 400;
+            color: $red;
+            margin: 0;
+        }
+        &--mode{
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey;
+            margin: 23px 0;
+        }
+    }
+}
