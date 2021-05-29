@@ -313,7 +313,17 @@ body {
 }
 
 .vacancy-select__list {
-  padding-left: 32px;
+  padding: 24px 0 24px 32px;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+}
+
+.vacancy-select__list:first-child {
+  margin-top: 0;
+}
+
+.vacancy-select__list:last-child {
+  margin-top: 0;
 }
 
 .conf__check {
@@ -408,8 +418,6 @@ input[type="checkbox"]:checked + label::before {
   font-size: 24px;
   font-weight: 500;
   color: #D3232A;
-  border-bottom: 2px dashed;
-  border-color: rgba(211, 35, 42, 0.2);
   margin: 0;
 }
 
@@ -420,7 +428,9 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .city-select__list {
-  padding-left: 12px;
+  padding: 10px 10px 24px 12px;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
 }
 
 .cont {
@@ -529,6 +539,11 @@ input[type="checkbox"]:checked + label::before {
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+.border-dashed {
+  border-bottom: 2px dashed;
+  border-color: rgba(211, 35, 42, 0.2);
 }
 
 @media (max-width: 1300px) {

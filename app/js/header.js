@@ -4,7 +4,7 @@ let header = function()
     {
         cityArr: ['Москва', 'Краснодар', 'Казань', 'Нижний Новгород'],
         parse_city_list()
-        {           
+        {   selectedCity.classList.remove('border-dashed');
             cont.classList.remove('h0');
             cont.classList.add('h100');
             let selectedCityText = selectedCity.innerHTML;            
@@ -30,15 +30,24 @@ let header = function()
             cityList.classList.remove('transition-down');
             cityList.classList.add('transition-up');
             document.querySelector('#cityCaret img').classList.remove('rotate')
-           
+            selectedCity.classList.add('border-dashed');
         },
         
         select_city(el)
-        {            
+        {   
+
             selectedCity.innerHTML = el.textContent;
-            for(let i = 0; i < 4; i++){
-                document.querySelector(`#city${i}`).innerHTML = ''
-            }            
+            setTimeout(() => {
+
+                for(let i = 0; i < 4; i++){
+                    document.querySelector(`#city${i}`).innerHTML = ''
+                }
+            }, 1000);
+            // for(let i = 0; i < 4; i++){
+            //         document.querySelector(`#city${i}`).innerHTML = ''
+            //     }
+            
+
         }
        
         

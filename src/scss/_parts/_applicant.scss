@@ -162,7 +162,15 @@
             padding: 48px 0 5px;
     }
     &-select__list{
-        padding-left: 32px;
+        padding: 24px 0 24px 32px;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+
+    }
+    &-select__list:first-child{
+        margin-top: 0;
+    }
+    &-select__list:last-child{
+        margin-top: 0;
     }
 }
 

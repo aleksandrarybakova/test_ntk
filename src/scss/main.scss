@@ -17,6 +17,7 @@ $red: #D3232A;
 $greyBorder: #F4F5F7;
 
 
+
 * {
     box-sizing : border-box;
 }
@@ -30,8 +31,11 @@ body {
     justify-content : center;   
 }
 
-.resume-content {
-    display: flex;
+.resume{
+    
+    &-content {
+        display: flex;
+    }
 }
 
 
